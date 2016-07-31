@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">HelpDx</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="prompt_companyName">Company Name</string>
+    <string name="action_next">Next</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_invalid_credentials">Invalid Credentials</string>
+
+    <string name="error_incorrect_password">This password is incorrect</string>
+
+    <string name="error_invalid_company">Invalid Company</string>
+    <string name="error_company_notfound">Company Not exist</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="title_activity_main">View Tickets</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="action_logout">Logout</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_ticket_list">Tickets</string>
+    <string name="title_ticket_detail">Ticket Detail</string>
+    <string name="title_reply">Reply</string>
+    <string name="prompt_title">Add Ticket Title</string>
+    <string name="prompt_desc">Add Ticket Description</string>
+    <string name="prompt_reply">Reply</string>
+    <string name="action_create_ticket">Go</string>
+    <string name="title_activity_create_ticket">Create Ticket</string>
+    <string name="title_activity_login_page">HelpDx</string>
+    <string name="action_reply">Reply</string>
+    <string name="action_replyclose">Reply and Close</string>
+    <string name="action_replycancel">Cancel</string>
+
+</resources>

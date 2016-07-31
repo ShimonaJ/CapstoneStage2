@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "D:\\AndroidApps\\Capstone\\HelpDxApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v23\\abc_control_background_material.xml",
+        "source": "D:\\AndroidApps\\Capstone\\HelpDxApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\drawable-v23\\abc_control_background_material.xml"
+    },
+    {
+        "merged": "D:\\AndroidApps\\Capstone-Project\\Capstone_Stage2\\HelpDxApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v23\\abc_control_background_material.xml",
+        "source": "D:\\AndroidApps\\Capstone-Project\\Capstone_Stage2\\HelpDxApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\drawable-v23\\abc_control_background_material.xml"
+    }
+]
