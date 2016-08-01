@@ -8,20 +8,8 @@
         "source": "D:\\AndroidApps\\Capstone\\HelpDxApp\\app\\src\\main\\res\\menu\\menu_login_page.xml"
     },
     {
-        "merged": "D:\\AndroidApps\\Capstone-Project\\Capstone_Stage2\\HelpDxApp\\app\\build\\intermediates\\res\\merged\\debug\\menu\\activity_main_drawer.xml",
-        "source": "D:\\AndroidApps\\Capstone-Project\\Capstone_Stage2\\HelpDxApp\\app\\src\\main\\res\\menu\\activity_main_drawer.xml"
-    },
-    {
         "merged": "D:\\AndroidApps\\Capstone\\HelpDxApp\\app\\build\\intermediates\\res\\merged\\debug\\menu\\reply_menu.xml",
         "source": "D:\\AndroidApps\\Capstone\\HelpDxApp\\app\\src\\main\\res\\menu\\reply_menu.xml"
-    },
-    {
-        "merged": "D:\\AndroidApps\\Capstone-Project\\Capstone_Stage2\\HelpDxApp\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_login_page.xml",
-        "source": "D:\\AndroidApps\\Capstone-Project\\Capstone_Stage2\\HelpDxApp\\app\\src\\main\\res\\menu\\menu_login_page.xml"
-    },
-    {
-        "merged": "D:\\AndroidApps\\Capstone-Project\\Capstone_Stage2\\HelpDxApp\\app\\build\\intermediates\\res\\merged\\debug\\menu\\ticket_detail_menu.xml",
-        "source": "D:\\AndroidApps\\Capstone-Project\\Capstone_Stage2\\HelpDxApp\\app\\src\\main\\res\\menu\\ticket_detail_menu.xml"
     },
     {
         "merged": "D:\\AndroidApps\\Capstone\\HelpDxApp\\app\\build\\intermediates\\res\\merged\\debug\\menu\\activity_main_drawer.xml",
@@ -30,13 +18,5 @@
     {
         "merged": "D:\\AndroidApps\\Capstone\\HelpDxApp\\app\\build\\intermediates\\res\\merged\\debug\\menu\\ticket_detail_menu.xml",
         "source": "D:\\AndroidApps\\Capstone\\HelpDxApp\\app\\src\\main\\res\\menu\\ticket_detail_menu.xml"
-    },
-    {
-        "merged": "D:\\AndroidApps\\Capstone-Project\\Capstone_Stage2\\HelpDxApp\\app\\build\\intermediates\\res\\merged\\debug\\menu\\reply_menu.xml",
-        "source": "D:\\AndroidApps\\Capstone-Project\\Capstone_Stage2\\HelpDxApp\\app\\src\\main\\res\\menu\\reply_menu.xml"
-    },
-    {
-        "merged": "D:\\AndroidApps\\Capstone-Project\\Capstone_Stage2\\HelpDxApp\\app\\build\\intermediates\\res\\merged\\debug\\menu\\main.xml",
-        "source": "D:\\AndroidApps\\Capstone-Project\\Capstone_Stage2\\HelpDxApp\\app\\src\\main\\res\\menu\\main.xml"
     }
 ]
