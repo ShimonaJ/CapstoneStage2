@@ -153,6 +153,9 @@
     <declare-styleable name="View"><attr format="dimension" name="paddingStart"/><attr format="dimension" name="paddingEnd"/><attr name="android:focusable"/><attr format="reference" name="theme"/><attr name="android:theme"/></declare-styleable>
     <declare-styleable name="ViewBackgroundHelper"><attr name="android:background"/><attr format="color" name="backgroundTint"/><attr name="backgroundTintMode"><enum name="src_over" value="3"/><enum name="src_in" value="5"/><enum name="src_atop" value="9"/><enum name="multiply" value="14"/><enum name="screen" value="15"/></attr></declare-styleable>
     <declare-styleable name="ViewStubCompat"><attr name="android:layout"/><attr name="android:inflatedId"/><attr name="android:id"/></declare-styleable>
+    <dimen name="TeamNames">12sp</dimen>
+    <dimen name="TicketCount">16sp</dimen>
+    <dimen name="Title">15sp</dimen>
     <dimen name="abc_action_bar_content_inset_material">16dp</dimen>
     <dimen name="abc_action_bar_default_height_material">56dp</dimen>
     <dimen name="abc_action_bar_default_padding_end_material">0dp</dimen>
@@ -278,6 +281,10 @@
     <dimen name="offset_y">300dp</dimen>
     <dimen name="text_margin">16dp</dimen>
     <dimen name="toolbar_title">20sp</dimen>
+    <dimen name="widget_detail_default_height">60dp</dimen>
+    <dimen name="widget_detail_default_width">250dp</dimen>
+    <dimen name="widget_detail_min_resize_height">@dimen/widget_detail_default_height</dimen>
+    <dimen name="widget_detail_min_resize_width">220dp</dimen>
     <item name="ic_menu_camera" type="drawable">@android:drawable/ic_menu_camera</item>
     <item name="ic_menu_gallery" type="drawable">@android:drawable/ic_menu_gallery</item>
     <item name="ic_menu_manage" type="drawable">@android:drawable/ic_menu_manage</item>
@@ -341,6 +348,7 @@
     <string name="appbar_scrolling_view_behavior" translatable="false">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>
     <string name="bottom_sheet_behavior" translatable="false">android.support.design.widget.BottomSheetBehavior</string>
     <string name="character_counter_pattern" translatable="false">%1$d / %2$d</string>
+    <string name="content_authority">app.com.work.shimonaj.helpdx</string>
     <string name="cross">cross</string>
     <string name="error_company_notfound">Company Not exist</string>
     <string name="error_field_required">This field is required</string>
@@ -351,6 +359,10 @@
     <string name="error_invalid_password">This password is too short</string>
     <string name="groupTickCross">groupTickCross</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hint_assignedTo">Assigned To</string>
+    <string name="hint_category">Category</string>
+    <string name="hint_createdOn">Created On</string>
+    <string name="hint_stage">Stage</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="path_cross">M6.4,6.4 L17.6,17.6 M6.4,17.6 L17.6,6.4</string>
@@ -361,14 +373,17 @@
     <string name="prompt_companyName">Company Name</string>
     <string name="prompt_desc">Add Ticket Description</string>
     <string name="prompt_email">Email</string>
-    <string name="prompt_password">Password (optional)</string>
+    <string name="prompt_password">Password</string>
     <string name="prompt_reply">Reply</string>
     <string name="prompt_title">Add Ticket Title</string>
+    <string name="recent_tckets">Recent Tickets</string>
     <string name="status_bar_notification_info_overflow">999+</string>
+    <string name="sync_account_type">helpdesk.tickets.com</string>
     <string name="tick">tick</string>
     <string name="title_activity_create_ticket">Create Ticket</string>
     <string name="title_activity_login_page">HelpDx</string>
     <string name="title_activity_main">View Tickets</string>
+    <string name="title_comments">Comments</string>
     <string name="title_reply">Reply</string>
     <string name="title_ticket_detail">Ticket Detail</string>
     <string name="title_ticket_list">Tickets</string>

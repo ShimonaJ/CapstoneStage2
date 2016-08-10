@@ -5,7 +5,7 @@
 <RelativeLayout
     android:layout_width="match_parent"
     android:layout_height="120dp">
-    <TextView android:text="Company" android:textColor="@color/accent"
+    <TextView android:text="@string/prompt_companyName" android:textColor="@color/accent"
         android:layout_width="match_parent" android:id="@+id/companyName"
         android:layout_height="wrap_content" android:textSize="36sp"
         android:layout_centerInParent="true"
@@ -20,7 +20,7 @@
             android:id="@+id/email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/prompt_email" android:text="test123@gmail.com"
+            android:hint="@string/prompt_email"
             android:inputType="textEmailAddress"
             android:maxLines="1"
             android:singleLine="true"/>
@@ -38,7 +38,7 @@
             android:hint="@string/prompt_password"
             android:imeActionId="@+id/login"
             android:imeActionLabel="@string/action_sign_in_short"
-            android:imeOptions="actionUnspecified" android:text="1234"
+            android:imeOptions="actionUnspecified"
             android:inputType="textPassword"
             android:maxLines="1"
             android:singleLine="true"/>

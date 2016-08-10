@@ -31,7 +31,7 @@
 
 
             <TextView android:id="@+id/detail_title"
-                android:layout_width="match_parent" android:text="Title"
+                android:layout_width="match_parent"
                 android:textAppearance="@style/TextAppearance.AppCompat.Title"
                 android:layout_height="wrap_content" />
 
@@ -40,7 +40,7 @@
         </android.support.design.widget.CollapsingToolbarLayout>
         <TextView android:id="@+id/detail_subtitle" android:layout_marginLeft="16dp"
             android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Subtitle"
-            android:layout_width="match_parent" android:text="Sub Title"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content" android:layout_marginBottom="@dimen/activity_horizontal_margin"
 android:maxLines="4"
             />
@@ -79,7 +79,7 @@ android:maxLines="4"
                 <!--android:layout_height="wrap_content" android:layout_marginBottom="10dp"-->
                 <!--/>-->
                 <TextView
-                    android:id="@+id/detail_desc" android:text="Title"
+                    android:id="@+id/detail_desc"
                     android:textAppearance="@android:style/TextAppearance.Material.Body1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"

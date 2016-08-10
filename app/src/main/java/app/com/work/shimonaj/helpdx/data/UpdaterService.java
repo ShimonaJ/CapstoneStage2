@@ -64,7 +64,7 @@ public class UpdaterService extends IntentService {
     public static final int TICKET_STATUS_INVALID = 4;
     @Retention(RetentionPolicy.SOURCE)
     @IntDef({TICKET_STATUS_OK,TICKET_STATUS_SERVER_DOWN,TICKET_STATUS_SERVER_INVALID,TICKET_STATUS_UNKNOWN,TICKET_STATUS_INVALID})
-    public @interface BookStatus{}
+    public @interface TicketStatus{}
 
 
     public UpdaterService() {
@@ -87,11 +87,11 @@ public class UpdaterService extends IntentService {
         }
         if (intent.getAction() == TICKET_POST) {
             Log.v(TAG, "************** Posting data.", null);
-            String str =(String)intent.getStringExtra("ticketData");
+            String str = intent.getStringExtra("ticketData");
             postTicket(str);
         }else if(intent.getAction() == TICKET_DETAIL) {
             Log.v(TAG, "************** Getting ticket detail & Fetching Comments.. :"+intent.getLongExtra("ticketId",0), null);
-            long str =(long)intent.getLongExtra("ticketId",0);
+            long str = intent.getLongExtra("ticketId",0);
             getTicketDetail(str);
            // getTicketComments(str);
         }
@@ -120,7 +120,7 @@ public class UpdaterService extends IntentService {
         }
         else if(intent.getAction() == TICKET_COMMENT_POST) {
             Log.v(TAG, "************** Posting comment data.", null);
-            String str =(String)intent.getStringExtra("commentData");
+            String str = intent.getStringExtra("commentData");
             postComment(str);
 
         }
@@ -136,12 +136,7 @@ public class UpdaterService extends IntentService {
         messageIntent.putExtra(MainActivity.MESSAGE_KEY,message);
         LocalBroadcastManager.getInstance(getApplicationContext()).sendBroadcast(messageIntent);
     }
-    static public void setBookStatus(Context c, @BookStatus int bookStatus){
-//        SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(c);
-//        SharedPreferences.Editor spe = sp.edit();
-//        spe.putInt(Config.TICKET_STATUS, bookStatus);
-//        spe.commit();
-    }
+
     private void postTicket(String str){
 
         try{

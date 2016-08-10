@@ -12,7 +12,7 @@ android:orientation="vertical"
         android:layout_height="wrap_content"
         >
         <android.support.v7.widget.Toolbar
-            android:id="@+id/toolbar" android:title="Create Ticket"
+            android:id="@+id/toolbar" android:title="@string/title_activity_create_ticket"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
             android:background="?attr/colorPrimary"
