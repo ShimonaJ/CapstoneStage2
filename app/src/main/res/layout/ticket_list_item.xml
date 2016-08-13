@@ -30,7 +30,7 @@
 android:padding="4dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="start"
-                android:gravity="start" android:hint="@string/hint_stage"
+                android:gravity="start"
 
 
                 android:textColor="@color/white"

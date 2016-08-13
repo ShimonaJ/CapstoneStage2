@@ -2460,18 +2460,18 @@ containing a value of this type.
         public static final int action_bar_spinner=0x7f0f0001;
         public static final int action_bar_subtitle=0x7f0f003b;
         public static final int action_bar_title=0x7f0f003a;
-        public static final int action_cancel=0x7f0f00b7;
+        public static final int action_cancel=0x7f0f00b8;
         public static final int action_context_bar=0x7f0f005b;
         public static final int action_divider=0x7f0f0097;
-        public static final int action_logout=0x7f0f00b4;
+        public static final int action_logout=0x7f0f00b5;
         public static final int action_menu_divider=0x7f0f0002;
         public static final int action_menu_presenter=0x7f0f0003;
         public static final int action_mode_bar=0x7f0f0057;
         public static final int action_mode_bar_stub=0x7f0f0056;
         public static final int action_mode_close_button=0x7f0f003c;
-        public static final int action_reply=0x7f0f00b5;
-        public static final int action_reply_close=0x7f0f00b6;
-        public static final int action_settings=0x7f0f00b3;
+        public static final int action_reply=0x7f0f00b6;
+        public static final int action_reply_close=0x7f0f00b7;
+        public static final int action_settings=0x7f0f00b4;
         public static final int activity_chooser_view_content=0x7f0f003d;
         public static final int addTicketDesc=0x7f0f006d;
         public static final int addTicketTitle=0x7f0f006b;
@@ -2557,12 +2557,12 @@ containing a value of this type.
         public static final int middle=0x7f0f0032;
         public static final int mini=0x7f0f0030;
         public static final int multiply=0x7f0f0027;
-        public static final int nav_camera=0x7f0f00ad;
-        public static final int nav_gallery=0x7f0f00ae;
-        public static final int nav_manage=0x7f0f00b0;
-        public static final int nav_send=0x7f0f00b2;
-        public static final int nav_share=0x7f0f00b1;
-        public static final int nav_slideshow=0x7f0f00af;
+        public static final int nav_camera=0x7f0f00ae;
+        public static final int nav_gallery=0x7f0f00af;
+        public static final int nav_manage=0x7f0f00b1;
+        public static final int nav_send=0x7f0f00b3;
+        public static final int nav_share=0x7f0f00b2;
+        public static final int nav_slideshow=0x7f0f00b0;
         public static final int navigation_header_container=0x7f0f0086;
         public static final int never=0x7f0f0036;
         public static final int nextBtn=0x7f0f008c;
@@ -2633,6 +2633,7 @@ containing a value of this type.
         public static final int view_offset_helper=0x7f0f000a;
         public static final int widget=0x7f0f00a9;
         public static final int widget_icon=0x7f0f00aa;
+        public static final int widget_item=0x7f0f00ad;
         public static final int widget_list=0x7f0f00ab;
         public static final int withText=0x7f0f0037;
         public static final int wrap_content=0x7f0f001a;
@@ -2720,7 +2721,8 @@ containing a value of this type.
         public static final int ticket_detail=0x7f040040;
         public static final int ticket_list_item=0x7f040041;
         public static final int widget_detail=0x7f040042;
-        public static final int widget_list_item=0x7f040043;
+        public static final int widget_item=0x7f040043;
+        public static final int widget_list_item=0x7f040044;
     }
     public static final class menu {
         public static final int activity_main_drawer=0x7f100000;
@@ -3180,8 +3182,9 @@ containing a value of this type.
         public static final int curve=0x7f070000;
     }
     public static final class xml {
-        public static final int syncadapter=0x7f080000;
-        public static final int widget_info_detail=0x7f080001;
+        public static final int authenticator=0x7f080000;
+        public static final int syncadapter=0x7f080001;
+        public static final int widget_info_detail=0x7f080002;
     }
     public static final class styleable {
         /** Attributes that can be used with a ActionBar.

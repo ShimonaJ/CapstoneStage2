@@ -29,9 +29,9 @@
     <dimen name="TeamNames">12sp</dimen>
     <dimen name="TicketCount">16sp</dimen>
     <dimen name="Title">15sp</dimen>
-    <dimen name="widget_detail_default_width">250dp</dimen>
-    <dimen name="widget_detail_default_height">60dp</dimen>
+    <dimen name="widget_detail_default_width">260dp</dimen>
+    <dimen name="widget_detail_default_height">160dp</dimen>
     <dimen name="widget_detail_min_resize_width">220dp</dimen>
-    <dimen name="widget_detail_min_resize_height">@dimen/widget_detail_default_height</dimen>
+    <dimen name="widget_detail_min_resize_height">120dp</dimen>
 
 </resources>

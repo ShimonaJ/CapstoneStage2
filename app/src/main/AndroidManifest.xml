@@ -77,6 +77,7 @@
             android:parentActivityName=".TicketDetailActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"  android:value="app.com.work.shimonaj.helpdx.TicketDetailActivity" />
+
         </activity>
         <activity
             android:name=".CreateTicketActivity"
@@ -85,6 +86,17 @@
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"  android:value="app.com.work.shimonaj.helpdx.MainActivity" />
             </activity>
+        <!-- Today Widget -->
+        <!--<receiver-->
+            <!--android:name=".widget.TodayWidgetProvider"-->
+            <!--android:label="@string/recent_tckets" >-->
+            <!--<intent-filter>-->
+                <!--<action android:name="android.appwidget.action.APPWIDGET_UPDATE" />-->
+                <!--<action android:name="helpdesk.ACTION_DATA_UPDATED" />-->
+            <!--</intent-filter>-->
+            <!--<meta-data android:name="android.appwidget.provider"-->
+                <!--android:resource="@xml/widget_info_today" />-->
+        <!--</receiver>-->
         <receiver
             android:name=".widget.DetailWidgetProvider"
             android:label="@string/recent_tckets"
@@ -96,6 +108,17 @@
             <meta-data android:name="android.appwidget.provider"
                 android:resource="@xml/widget_info_detail" />
         </receiver>
+        <service
+            android:name=".sync.HelpDeskAuthenticatorService"
+            >
+            <intent-filter>
+                <action android:name="android.accounts.AccountAuthenticator" />
+            </intent-filter>
+            <meta-data
+                android:name="android.accounts.AccountAuthenticator"
+                android:resource="@xml/authenticator" />
+        </service>
+
         <service
             android:name=".sync.TicketSyncService"
             android:exported="true"

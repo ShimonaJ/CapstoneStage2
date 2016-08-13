@@ -10,6 +10,7 @@ import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.Binder;
 import android.os.Build;
+import android.os.Bundle;
 import android.util.Log;
 import android.widget.AdapterView;
 import android.widget.RemoteViews;
@@ -21,6 +22,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.concurrent.ExecutionException;
 
+import app.com.work.shimonaj.helpdx.MainActivity;
 import app.com.work.shimonaj.helpdx.R;
 import app.com.work.shimonaj.helpdx.data.ItemsContract;
 import app.com.work.shimonaj.helpdx.data.TicketLoader;
@@ -60,10 +62,10 @@ public class DetailWidgetRemoteViewService extends RemoteViewsService {
                 Uri ticketUri = ItemsContract.Items.buildDirUri();
 
                 data = getContentResolver().query(ticketUri,
-                        null,
+                        TicketLoader.Query.PROJECTION,
                         null
                         , null,
-                        ItemsContract.Items.CREATEDON + " DESC");
+                        ItemsContract.Items.TICKETID + " DESC limit 10");
                 Binder.restoreCallingIdentity(identityToken);
 
             }
@@ -88,18 +90,25 @@ public class DetailWidgetRemoteViewService extends RemoteViewsService {
                     return null;
                 }
                 RemoteViews views = new RemoteViews(getPackageName(),
-                        R.layout.ticket_list_item);
+                        R.layout.widget_item);
+//Log.v(LOG_TAG,"check:"+data.getString(TicketLoader.Query.STAGENAME));
+                String stagename =data.getString(TicketLoader.Query.STAGENAME);
+                views.setTextViewText(R.id.title, "#"+data.getString(TicketLoader.Query.TICKETID)+" "+data.getString(TicketLoader.Query.TITLE));
+               // views.setTextViewText(R.id.stagename, data.getString(TicketLoader.Query.STAGENAME));
+                if(stagename.equals("Open")){
 
-                views.setTextViewText(R.id.title, data.getString(TicketLoader.Query.TITLE));
-                views.setTextViewText(R.id.stagename, data.getString(TicketLoader.Query.STAGENAME));
-                views.setTextViewText(R.id.ticketid, data.getString(TicketLoader.Query.TICKETID));
-                views.setTextViewText(R.id.assignedTo, data.getString(TicketLoader.Query.ASSIGNEDTO));
-                views.setTextViewText(R.id.category, data.getString(TicketLoader.Query.CATEGORYNAME));
-                views.setTextViewText(R.id.createdOn, data.getString(TicketLoader.Query.CREATEDON));
-
-                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.ICE_CREAM_SANDWICH_MR1) {
-                    setRemoteContentDescription(views, "Ticket title: " + data.getString(TicketLoader.Query.TITLE) +" is in "+ data.getString(TicketLoader.Query.STAGENAME) +" stage");
+                    views.setTextColor(R.id.title, getResources().getColor( R.color.red));
+                }else if(stagename.equals("Closed")){
+                    views.setTextColor(R.id.title, getResources().getColor( R.color.green));
                 }
+//                views.setTextViewText(R.id.ticketid, data.getString(TicketLoader.Query.TICKETID));
+//                views.setTextViewText(R.id.assignedTo, data.getString(TicketLoader.Query.ASSIGNEDTO));
+//                views.setTextViewText(R.id.category, data.getString(TicketLoader.Query.CATEGORYNAME));
+//                views.setTextViewText(R.id.createdOn, data.getString(TicketLoader.Query.CREATEDON));
+//
+//                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.ICE_CREAM_SANDWICH_MR1) {
+//                    setRemoteContentDescription(views, "Ticket title: " + data.getString(TicketLoader.Query.TITLE) +" is in "+ data.getString(TicketLoader.Query.STAGENAME) +" stage");
+//                }
 
 
 //                final Intent fillInIntent = new Intent();
@@ -109,6 +118,12 @@ public class DetailWidgetRemoteViewService extends RemoteViewsService {
 //                        dateInMillis);
 //                fillInIntent.setData(weatherUri);
 //                views.setOnClickFillInIntent(R.id.widget_list_item, fillInIntent);
+                Intent mainActivityIntent = new Intent(getApplicationContext(), MainActivity.class);
+                Bundle arguments = new Bundle();
+                arguments.putInt(MainActivity.SELECTED_LIST_POS_KEY,position);
+                 mainActivityIntent.putExtras(arguments);
+                //startActivity(mainActivityIntent);
+                views.setOnClickFillInIntent(R.id.widget_item, mainActivityIntent);
                 return views;
             }
 
@@ -119,7 +134,7 @@ public class DetailWidgetRemoteViewService extends RemoteViewsService {
 
             @Override
             public RemoteViews getLoadingView() {
-                return new RemoteViews(getPackageName(), R.layout.ticket_list_item);
+                return new RemoteViews(getPackageName(), R.layout.widget_item);
             }
 
             @Override

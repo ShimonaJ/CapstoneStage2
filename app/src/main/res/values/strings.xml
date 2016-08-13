@@ -50,5 +50,5 @@
     <string name="action_replyclose">Reply and Close</string>
     <string name="action_replycancel">Cancel</string>
     <string name="sync_account_type">helpdesk.tickets.com</string>
-    <string name="content_authority">app.com.work.shimonaj.helpdx</string>
+    <string name="content_authority">com.example.helpdx</string>
 </resources>

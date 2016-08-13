@@ -39,6 +39,7 @@ import app.com.work.shimonaj.helpdx.data.TicketLoader;
 import app.com.work.shimonaj.helpdx.data.UpdaterService;
 import app.com.work.shimonaj.helpdx.remote.Config;
 import app.com.work.shimonaj.helpdx.remote.RemoteEndpointUtil;
+import app.com.work.shimonaj.helpdx.sync.TicketSyncAdapter;
 import app.com.work.shimonaj.helpdx.util.Utility;
 
 public class MainActivity extends AppCompatActivity
@@ -61,7 +62,7 @@ public class MainActivity extends AppCompatActivity
         setSupportActionBar(toolbar);
        // ((TextView)findViewById(R.id.toolbar_title)).setTypeface(Utility.mediumRobotoFont);
 
-
+        TicketSyncAdapter.initializeSyncAdapter(this);
         mSwipeRefreshLayout = (SwipeRefreshLayout) findViewById(R.id.swipe_refresh_layout);
         mRecyclerView = (RecyclerView) findViewById(R.id.recycler_view);
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
@@ -119,11 +120,11 @@ public class MainActivity extends AppCompatActivity
             String position =Utility.getValFromSharedPref(this,MainActivity.SELECTED_LIST_POS_KEY);
             if(position!=""){
                 mPosition=  Integer.parseInt(position);
+            }else
+            if(getIntent().getExtras()!=null){
+                Bundle params =getIntent().getExtras();
+                mPosition=  params.getInt(MainActivity.SELECTED_LIST_POS_KEY);
             }
-//            if(getIntent().getExtras()!=null){
-//                Bundle params =getIntent().getExtras();
-//                mPosition=  Integer.parseInt(params.getString(MainActivity.SELECTED_LIST_POS_KEY));
-//            }
         }
     }
     @Override

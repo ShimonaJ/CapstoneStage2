@@ -91,7 +91,17 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="app.com.work.shimonaj.helpdx.MainActivity" />
         </activity>
-
+        <!-- Today Widget -->
+        <!-- <receiver -->
+        <!-- android:name=".widget.TodayWidgetProvider" -->
+        <!-- android:label="@string/recent_tckets" > -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.appwidget.action.APPWIDGET_UPDATE" /> -->
+        <!-- <action android:name="helpdesk.ACTION_DATA_UPDATED" /> -->
+        <!-- </intent-filter> -->
+        <!-- <meta-data android:name="android.appwidget.provider" -->
+        <!-- android:resource="@xml/widget_info_today" /> -->
+        <!-- </receiver> -->
         <receiver
             android:name="app.com.work.shimonaj.helpdx.widget.DetailWidgetProvider"
             android:enabled="true"
@@ -106,6 +116,15 @@
                 android:resource="@xml/widget_info_detail" />
         </receiver>
 
+        <service android:name="app.com.work.shimonaj.helpdx.sync.HelpDeskAuthenticatorService" >
+            <intent-filter>
+                <action android:name="android.accounts.AccountAuthenticator" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.accounts.AccountAuthenticator"
+                android:resource="@xml/authenticator" />
+        </service>
         <service
             android:name="app.com.work.shimonaj.helpdx.sync.TicketSyncService"
             android:exported="true" >

@@ -281,9 +281,9 @@
     <dimen name="offset_y">300dp</dimen>
     <dimen name="text_margin">16dp</dimen>
     <dimen name="toolbar_title">20sp</dimen>
-    <dimen name="widget_detail_default_height">60dp</dimen>
-    <dimen name="widget_detail_default_width">250dp</dimen>
-    <dimen name="widget_detail_min_resize_height">@dimen/widget_detail_default_height</dimen>
+    <dimen name="widget_detail_default_height">160dp</dimen>
+    <dimen name="widget_detail_default_width">260dp</dimen>
+    <dimen name="widget_detail_min_resize_height">120dp</dimen>
     <dimen name="widget_detail_min_resize_width">220dp</dimen>
     <item name="ic_menu_camera" type="drawable">@android:drawable/ic_menu_camera</item>
     <item name="ic_menu_gallery" type="drawable">@android:drawable/ic_menu_gallery</item>
@@ -348,7 +348,7 @@
     <string name="appbar_scrolling_view_behavior" translatable="false">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>
     <string name="bottom_sheet_behavior" translatable="false">android.support.design.widget.BottomSheetBehavior</string>
     <string name="character_counter_pattern" translatable="false">%1$d / %2$d</string>
-    <string name="content_authority">app.com.work.shimonaj.helpdx</string>
+    <string name="content_authority">com.example.helpdx</string>
     <string name="cross">cross</string>
     <string name="error_company_notfound">Company Not exist</string>
     <string name="error_field_required">This field is required</string>
