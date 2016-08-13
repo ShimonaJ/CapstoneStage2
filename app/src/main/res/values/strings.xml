@@ -6,7 +6,7 @@
     <string name="prompt_password">Password</string>
     <string name="prompt_companyName">Company Name</string>
     <string name="action_next">Next</string>
-    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in">Sign in</string>
     <string name="action_sign_in_short">Sign in</string>
     <string name="error_invalid_email">This email address is invalid</string>
     <string name="error_invalid_password">This password is too short</string>
@@ -17,9 +17,7 @@
     <string name="error_invalid_company">Invalid Company</string>
     <string name="error_company_notfound">Company Not exist</string>
     <string name="error_field_required">This field is required</string>
-    <string name="permission_rationale">"Contacts permissions are needed for providing email
-        completions."
-    </string>
+
     <string name="title_activity_main">View Tickets</string>
     <string name="title_comments">Comments</string>
     <string name="hint_stage">Stage</string>
@@ -51,4 +49,5 @@
     <string name="action_replycancel">Cancel</string>
     <string name="sync_account_type">helpdesk.tickets.com</string>
     <string name="content_authority">com.example.helpdx</string>
+    <string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
 </resources>

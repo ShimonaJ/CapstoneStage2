@@ -36,7 +36,8 @@ import java.util.ArrayList;
 
 public class UpdaterService extends IntentService {
     private static final String TAG = UpdaterService.class.getName();
-
+    public static final String ACTION_DATA_UPDATED =
+            "helpdesk.ACTION_DATA_UPDATED";
     public static final String BROADCAST_ACTION_STATE_CHANGE
             = "com.example.helpdx.intent.action.STATE_CHANGE";
     public static final String EXTRA_REFRESHING
@@ -229,11 +230,18 @@ public class UpdaterService extends IntentService {
             Log.e(TAG, "Error updating content.", e);
         }
         broadcastMessage("Latest tickets fetched.");
+        updateWidgets();
      //   setBookStatus(this,TICKET_STATUS_OK);
      //   sendStickyBroadcast(
        //         new Intent(BROADCAST_ACTION_STATE_CHANGE).putExtra(EXTRA_REFRESHING, false));
     }
-
+    private void updateWidgets() {
+        Context context = getApplicationContext();
+        // Setting the package ensures that only components in our app will receive the broadcast
+        Intent dataUpdatedIntent = new Intent(ACTION_DATA_UPDATED)
+                .setPackage(context.getPackageName());
+        context.sendBroadcast(dataUpdatedIntent);
+    }
     private void validateCompanyName(String companyName) {
         sendStickyBroadcast(
                 new Intent(VALIDATE_COMPANY).putExtra(EXTRA_REFRESHING, true));

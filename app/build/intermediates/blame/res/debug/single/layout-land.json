@@ -2,9 +2,5 @@
     {
         "merged": "D:\\AndroidApps\\Capstone\\HelpDxApp\\app\\build\\intermediates\\res\\merged\\debug\\layout-land\\activity_main.xml",
         "source": "D:\\AndroidApps\\Capstone\\HelpDxApp\\app\\src\\main\\res\\layout-land\\activity_main.xml"
-    },
-    {
-        "merged": "D:\\AndroidApps\\Capstone\\HelpDxApp\\app\\build\\intermediates\\res\\merged\\debug\\layout-land\\widget_list_item.xml",
-        "source": "D:\\AndroidApps\\Capstone\\HelpDxApp\\app\\src\\main\\res\\layout-land\\widget_list_item.xml"
     }
 ]

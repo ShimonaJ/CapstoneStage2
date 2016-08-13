@@ -7,12 +7,22 @@ import android.app.Activity;
 import android.preference.PreferenceManager;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentTransaction;
+import android.widget.ProgressBar;
 
 import app.com.work.shimonaj.helpdx.remote.Config;
 import app.com.work.shimonaj.helpdx.util.Utility;
 
+import com.google.android.gms.ads.AdListener;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.InterstitialAd;
+import com.google.android.gms.appindexing.Action;
+import com.google.android.gms.appindexing.AppIndex;
+import com.google.android.gms.common.api.GoogleApiClient;
+
 public class LoginPageActivity extends FragmentActivity {
     CompanyAuthFragment companyAuthFragment;
+
+    private ProgressBar spinner;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

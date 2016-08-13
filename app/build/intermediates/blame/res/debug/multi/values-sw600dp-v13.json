@@ -311,8 +311,27 @@
                     "startLine": 18,
                     "startColumn": 4,
                     "startOffset": 1159,
+                    "endColumn": 72,
+                    "endOffset": 1227
+                },
+                "from": {
+                    "file": "D:\\AndroidApps\\Capstone\\HelpDxApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\22.2.0\\res\\values-sw600dp\\values-sw600dp.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 297,
+                        "endColumn": 72,
+                        "endOffset": 365
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 19,
+                    "startColumn": 4,
+                    "startOffset": 1232,
                     "endColumn": 54,
-                    "endOffset": 1209
+                    "endOffset": 1282
                 },
                 "from": {
                     "file": "D:\\AndroidApps\\Capstone\\HelpDxApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
@@ -327,11 +346,11 @@
             },
             {
                 "to": {
-                    "startLine": 19,
+                    "startLine": 20,
                     "startColumn": 4,
-                    "startOffset": 1214,
+                    "startOffset": 1287,
                     "endColumn": 62,
-                    "endOffset": 1272
+                    "endOffset": 1345
                 },
                 "from": {
                     "file": "D:\\AndroidApps\\Capstone\\HelpDxApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.2.1\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
@@ -346,12 +365,12 @@
             },
             {
                 "to": {
-                    "startLine": 20,
+                    "startLine": 21,
                     "startColumn": 4,
-                    "startOffset": 1277,
-                    "endLine": 23,
+                    "startOffset": 1350,
+                    "endLine": 24,
                     "endColumn": 12,
-                    "endOffset": 1454
+                    "endOffset": 1527
                 },
                 "from": {
                     "file": "D:\\AndroidApps\\Capstone\\HelpDxApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.2.1\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
