@@ -10,11 +10,13 @@ keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
 
 android {
     signingConfigs {
-        config {
-            keyAlias 'Key'
+        latestconfig1 {
+            keyAlias 'LatestKey'
             keyPassword 'test123'
-            storeFile file('D:/Keystore/keystore.jks')
+            storeFile file('D:/Keystore/keylatest1.jks')
             storePassword 'test123'
+        }
+        config {
         }
     }
     compileSdkVersion 23
@@ -25,13 +27,19 @@ android {
         targetSdkVersion 23
         versionCode 1
         versionName "1.0"
+        signingConfig signingConfigs.latestconfig1
     }
     buildTypes {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-            signingConfig signingConfigs.config
+            signingConfig signingConfigs.latestconfig1
         }
+        debug {
+            signingConfig signingConfigs.latestconfig1
+        }
+    }
+    productFlavors {
     }
 }
 
